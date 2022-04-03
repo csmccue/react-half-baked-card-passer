@@ -1,9 +1,9 @@
 import './App.css';
 import initialCards from './cards-data';
-import Player from './Player';
-import CardList from './CardList';
+import Player from './components/Player';
+import CardList from './components/CardList';
 import { useState } from 'react';
-import ExecutePassButton from './ExecutePassButton';
+import ExecutePassButton from './components/ExecutePassButton';
 
 function App() {
   const [deck, setDeck] = useState(initialCards);
