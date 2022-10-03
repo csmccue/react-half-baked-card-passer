@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { GameContext } from '../context/GameContext';
 
 export default function ExecutePassButton({
-  passCard,
+  passCard
 }) {
   const { selectedCard, setSelectedCard, setFrom, from, to } = useContext(GameContext);
   return (
