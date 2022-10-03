@@ -23,14 +23,6 @@ function App() {
     setTo
   } = useContext(GameContext);
 
-  // const [deck, setDeck] = useState(initialCards);
-  // const [playerOneHand, setPlayerOneHand] = useState([]);
-  // const [selectedCard, setSelectedCard] = useState();
-  // const [playerTwoHand, setPlayerTwoHand] = useState([]);
-  // const [playerThreeHand, setPlayerThreeHand] = useState([]);
-  // const [from, setFrom] = useState('deck');
-  // const [to, setTo] = useState(1);
-
   function findCardIndex(value, suit, cards) {
     return cards.findIndex((card) => card.value === value && card.suit === suit);
   }
