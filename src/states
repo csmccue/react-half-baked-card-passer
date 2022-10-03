@@ -1,0 +1,30 @@
+Card
+  card
+  selectedCard 
+  setSelectedCard
+  setFrom
+  player
+
+CardList
+  cards
+  setSelectedCard
+  player
+  setFrom
+  selectedCard
+
+ExecutePassButton
+  passcard
+  setFrom
+  from
+  to
+  selectedCard
+  setSelectedCard
+
+Player
+  player
+  setTo
+  hand
+  setFrom
+  setSelectedCard
+  selectedCard
+  to
