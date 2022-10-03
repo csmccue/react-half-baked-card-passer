@@ -1,9 +1,8 @@
 import React from 'react';
 import Card from './Card';
 
+
 export default function CardList({ cards, setSelectedCard, player, setFrom, selectedCard }) {
-  // console.log(cards);
-  
   return (
     <div className="card-list">
       {cards.map((card) => (

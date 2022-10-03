@@ -23,6 +23,7 @@ function App() {
     setTo
   } = useContext(GameContext);
 
+
   function findCardIndex(value, suit, cards) {
     return cards.findIndex((card) => card.value === value && card.suit === suit);
   }
