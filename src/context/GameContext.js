@@ -12,7 +12,24 @@ const GameProvider = ({ children }) => {
   const [from, setFrom] = useState('deck');
   const [to, setTo] = useState(1);
 
-  return <GameContext.Provider value = {{ deck, setDeck }}>{children}</GameContext.Provider>;
+  const gameState = {
+    deck,
+    setDeck,
+    playerOneHand,
+    setPlayerOneHand,
+    selectedCard,
+    setSelectedCard,
+    playerTwoHand,
+    setPlayerTwoHand,
+    playerThreeHand,
+    setPlayerThreeHand,
+    from,
+    setFrom,
+    to,
+    setTo
+  };
+
+  return <GameContext.Provider value = {{ gameState }}>{children}</GameContext.Provider>;
 };
 
 export { GameProvider, GameContext };
